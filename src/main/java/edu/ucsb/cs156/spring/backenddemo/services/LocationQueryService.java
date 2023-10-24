@@ -44,7 +44,6 @@ public class LocationQueryService {
 
         ResponseEntity<String> re = restTemplate.exchange(ENDPOINT, HttpMethod.GET, entity, String.class,
                 uriVariables);
-
         return re.getBody();
     }
 
