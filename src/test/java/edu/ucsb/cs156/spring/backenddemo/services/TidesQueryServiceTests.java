@@ -40,4 +40,5 @@ public class TidesQueryServiceTests {
         String actualResult = tidesQueryService.getJSON(beginDate, endDate, station);
         assertEquals(fakeJsonResult, actualResult);
     }
+
 }
