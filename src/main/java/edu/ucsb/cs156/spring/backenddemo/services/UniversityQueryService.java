@@ -34,7 +34,8 @@ public class UniversityQueryService {
     public static final String ENDPOINT = "http://universities.hipolabs.com/search?name={name}";
 
     public String getJSON(String name) throws HttpClientErrorException {
-       HttpHeaders headers = new HttpHeaders();
+        log.info("name={}", name);
+        HttpHeaders headers = new HttpHeaders();
 
        headers.setAccept(List.of(MediaType.APPLICATION_JSON));
        headers.setContentType(MediaType.APPLICATION_JSON);
